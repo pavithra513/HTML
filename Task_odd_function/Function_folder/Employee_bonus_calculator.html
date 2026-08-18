@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label>Salary:</label>
+            <input type="number" id="salary">
+            <input type="submit" onclick="employee()">
+
+        </form>
+    </div>
+    <script>
+        function employee() {
+            let salary =Number (document.getElementById("salary").value);
+            if (salary > 50000) {
+                bonus1 = salary * (20 / 100);
+                total1 = salary + bonus1;
+                document.write("salary:"+salary+"</br>");
+                document.write("bonus:"+ bonus1+"</br>");
+                document.write("total amount:" + total1);
+            }
+            else if (salary > 30000) {
+                bonus2 = salary * (10 / 100);
+                total2 = salary * bonus2;
+                 document.write("salary:"+salary+"</br>");
+                document.write("bonus:"+ bonus2+"</br>");
+                document.write("total amount:" + total2);
+               
+
+            }
+            else {
+                bonus3 = salary * (5 / 100);
+                total3=salary*bonus3;
+                document.write("salary:"+salary+"</br>");
+                document.write("bonus:"+ bonus3+"</br>");
+                document.write("total amount:" + total3);
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -6,107 +6,252 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
     <style>
-        #navbar {
-            flex-direction: row;
-            display: flex;
-            justify-content: space-around;
-            background-color:#6B4659;
-            height: 100px;
-            width: 100%;
-            border-radius: 15px;
-            align-items: center;
-            border:2px solid white;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
 
-        .a {
+        body {
+            font-family: Arial, sans-serif;
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 5px;
-            background-color: #C26A9A;
-            color: white;
-            border: 2px solid black;
-            border-radius: 6px;
-            align-items: space-between;
-
-        }
-
-        .h1 {
-            text-align: center;
-        }
-
-        .p1 {
-            text-align: center;
-        }
-
-        .p2 {
-            text-align: center;
-
-        }
-
-        .nav {
-            
-            align-items: center;
-            background-image: url("back1.jpg");
-            text-align: center;
-            height: 100vh;
-            background-repeat: no-repeat;
+            /* ONE BACKGROUND FOR THE WHOLE PAGE */
+            background-image: url("Reference/background.png");
             background-size: cover;
-            align-content: center;
-            background-color: rgba(0, 0, 0, 0.5);
-        }
-        h2{
-            color:white;
-        }
-        .btn {
-            border: 2px solid black;
-            border-radius: 10px;
-            background-color: #C26A9A;
+            background-position: center top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
 
-            padding: 10px;
-            margin: 10px;
             color: white;
-
         }
 
-        .btn:hover {
-            background-color: blue;
-            border: 2px solid red;
-
-        }
-
-        .btn a:hover {
+        .hero p {
             color: white;
+            text-shadow: 0 2px 6px black;
+        }
+
+        /* NAVBAR */
+
+        .navbar {
+            height: 80px;
+            padding: 0 7%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            /* IMPORTANT: NO BACKGROUND */
+            background: transparent;
+
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo h2 {
+            color: #5b4bdb;
+            font-size: 25px;
+        }
+
+        .logo span {
+            font-size: 11px;
+            letter-spacing: 4px;
+            color: #777;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 35px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color:rgba(255, 255, 255, 0.797);
+            font-weight: 500;
+        }
+
+        .nav-links a:hover {
+            color: #5b4bdb;
+        }
+
+        .nav-btn {
+            text-decoration: none;
+            background: #1b15ba;
+            color: white;
+            padding: 12px 22px;
+            border-radius: 25px;
+        }
+        .nav-btn:hover{
+            background-color: #806cff;
         }
 
         
 
+        /* HERO */
 
+        .hero {
+            min-height: 100vh;
+            padding: 70px 7%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            background: transparent;
+        }
+
+        .hero-content {
+            width: 50%;
+        }
+
+        .small-title {
+            color: white;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            color: white;
+            text-shadow: 0 3px 10px black;
+        }
+
+
+
+        .hero h1 span {
+            color: #5b4bdb;
+        }
+
+        .hero-content>p {
+            color: rgba(255, 255, 255, 0.453);
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+        .hero-buttons {
+            margin-top: 30px;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .primary-btn {
+            background: #1b15ba;
+            color: white;
+        }
+        .primary-btn:hover{
+            background-color: #806cff;
+        }
+
+        .secondary-btn {
+            border: 1px solid #5b4bdb;
+            color: #5b4bdb;
+        }
+        .secondary-btn:hover{
+            background-color: rgb(8, 28, 119);
+            color:whitesmoke;
+            transition:1s;
+        }
+
+        .hero-image {
+            width: 43%;
+        }
+
+        .hero-image img {
+            width: 100%;
+            border-radius: 25px;
+        }
+
+        /* REGISTER */
+
+        .register-section {
+            margin: 70px 7%;
+            padding: 60px;
+            border-radius: 25px;
+            background: linear-gradient(120deg,
+                    #5b4bdb,
+                    #806cff);
+
+            color: white;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .register-section h2 {
+            font-size: 38px;
+            margin: 10px 0;
+        }
+
+        .register-section a {
+            background: white;
+            color: #5b4bdb;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
     </style>
 </head>
 
 <body>
-    <nav id="navbar">
-        <h2 class="h2"><em>Zepta Online Course Registration</em></h2>
-        <button class="btn"><a href="online_home_page.html">Home</a></button>
-        <button class="btn"><a href="online_signup_page.html">Signup</a></button>
-        <button class="btn"><a href="online_About_page.html">About</a></button>
-        <button class="btn"><a href="online_Course_page.html">Course</a></button>
-        <button class="btn"><a href="online_registration_page.html">Register</a></button>
-        <button class="btn"><a href="online_payment_page.html">Payment</a></button>
-        <button class="btn"><a href="online_review_page.html">Review</a></button>
-        <button class="btn"><a href="online_conduct_page.html">Conduct Us</a></button>
-    </nav>
-    <section>
-        <div class="nav">
-            <h1 class="h1">Welcome to The Knowledge World...!</h1>
+    <nav class="navbar">
 
-            <p class="p1">Zero Knowledge to Hero...</p>
-            <p class="p2">Affordable cost & Quality Teaching.</p>
+        <div class="logo">
+            <h2>NEXORA</h2>
+            <span>ACADEMY</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </div>
+
+        <a href="register.html" class="nav-btn">Get Started</a>
+
+    </nav>
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="small-title">WELCOME TO NEXORA ACADEMY</p>
+
+            <h1>
+                Learn New Skills.
+                <span>Build Your Future.</span>
+            </h1>
+
+            <p>
+                Upgrade your skills with industry-focused courses,
+                practical learning and expert guidance.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="online_Course_page.html" class="primary-btn">
+                    Explore Courses
+                </a>
+
+                <a href="register.html" class="secondary-btn">
+                    Register Now
+                </a>
+            </div>
 
         </div>
+
+
+
     </section>
+    
 </body>
 
 </html>

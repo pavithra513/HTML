@@ -1,0 +1,41 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>e-commerse</title>
+  </head>
+  <body>
+    <h2>E-commeres</h2>
+    <div>
+        <form>
+           <label>amount</label><input type="number" id="s1">
+           <input type="submit" onclick="demo()">
+        </form>
+    </div>
+    <script>
+        function demo(){
+        let amount=Number(document.getElementById("s1").value);
+        if(amount>1000){
+            document.write("free delivery");
+        }
+        else {
+            
+                let finalAmount = amount + 50;
+                document.write("Final amount: " + finalAmount);
+        
+        }
+        }
+    
+
+        
+    </script>
+    
+  </body>
+  </html>
+  
+  
+  
+  
+  
+  

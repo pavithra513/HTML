@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinema</title>
+</head>
+<body>
+    <div>
+        <form>
+            <label>Age</label><input type="number" id="age"><br>
+           
+           <label>Number of Tickets</label>
+        <input type="number" id="tickets"><br>
+          <input type="submit" value="Calculate" onclick="cinema()">
+         </form>
+         </div>
+    
+   
+
+<script>
+    function cinema() {
+
+        let age = document.getElementById("age").value;
+        let tickets = document.getElementById("tickets").value;
+        let price;
+
+        if (age < 12) {
+            price = 100;
+        }
+        else if (age > 60) {
+            price = 120;
+        }
+        else {
+            price = 200;
+        }
+
+        let total = price * tickets;
+
+        document.write("Ticket Price: " + price + "<br>");
+        document.write("Number of Tickets: " + tickets + "<br>");
+        document.write("Total Ticket Price: " + total);
+    }
+</script>
+    
+    
+    
+</body>
+</html>

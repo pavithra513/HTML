@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI</title>
+</head>
+
+<body>
+    <div>
+        <form>
+            <label>BMI value</label><input type="number" id="BMI">
+            <input type="submit" onclick="calculator()">
+        </form>
+    </div>
+    <script>
+        function calculator() {
+            let BMI = document.getElementById("BMI").value;
+
+            if (BMI < 18.5) {
+                document.write("BMI value:" + BMI + "</br>");
+                document.write("BMI result:" + "underweight");
+            }
+            else if (BMI < 25) {
+                document.write("BMI value:" + BMI + "</br>");
+                document.write("BMI result:" + "Normal");
+            }
+
+            else if (BMI < 30) {
+                document.write("BMI value:" + BMI + "</br>");
+                document.write("BMI result:" + "over weight");
+            }
+            else {
+                document.write("BMI value:" + BMI + "</br>");
+                document.write("BMI result:"+"obese");
+            }
+
+
+        }
+    </script>
+
+</body>
+
+</html>

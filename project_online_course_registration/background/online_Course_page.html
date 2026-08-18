@@ -1,0 +1,244 @@
+<html>
+
+<head>
+    <title>
+        coursepage
+    </title>
+    <style>
+        /* COURSES */
+
+        .courses {
+            padding: 80px 7%;
+            background-image: url("Reference/background.png");
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .section-title p {
+            color: #5c4bdbf3;
+            font-weight: bold;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin: 10px;
+            color: whitesmoke;
+        }
+
+        .section-title span {
+            color: rgba(255, 255, 255, 0.553);
+        }
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 25px;
+        }
+
+        .course-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .course-card img {
+            width: 100%;
+            height: 190px;
+            object-fit: cover;
+        }
+
+        .course-info {
+            padding: 20px;
+            background-color: #171662;
+        }
+
+        .course-info>span {
+            color: #4bb5db;
+            font-size: 14px;
+        }
+
+        .course-info h3 {
+            margin: 12px 0;
+            color: whitesmoke;
+        }
+
+        .course-info p {
+            color: #eabd0a;
+            line-height: 1.5;
+        }
+
+        .course-bottom {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            color: white;
+        }
+
+        .course-bottom a {
+            text-decoration: none;
+            color: #4bc8db;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="courses">
+
+        <div class="section-title">
+            <p>LEARN & GROW</p>
+            <h2>Popular Courses</h2>
+            <span>Choose the right course and start building your future.</span>
+        </div>
+
+        <div class="course-container">
+
+            <div class="course-card">
+                <img src="Reference/fullstack.webp" alt="Web Development">
+
+                <div class="course-info">
+                    <span>6 Months</span>
+                    <h3>Full Stack Web Development</h3>
+
+                    <p>
+                        Learn HTML, CSS, JavaScript and modern
+                        web development.
+                    </p>
+
+                    <div class="course-bottom">
+                        <strong>Beginner</strong>
+                        <a href="register.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="course-card">
+                <img src="Reference/python.jpg" alt="Python">
+
+                <div class="course-info">
+                    <span>3 Months</span>
+                    <h3>Python Programming</h3>
+
+                    <p>
+                        Learn Python programming from basics
+                        to practical projects.
+                    </p>
+
+                    <div class="course-bottom">
+                        <strong>Beginner</strong>
+                        <a href="register.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="course-card">
+                <img src="Reference/Dataanalysis.png" alt="Data Analytics">
+
+                <div class="course-info">
+                    <span>5 Months</span>
+                    <h3>Data Analytics</h3>
+
+                    <p>
+                        Learn Excel, SQL, Python and Power BI
+                        for data analysis.
+                    </p>
+
+                    <div class="course-bottom">
+                        <strong>Intermediate</strong>
+                        <a href="register.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="Reference/AI.png" alt="AI">
+
+                <div class="course-info">
+                    <span>5 Months</span>
+                    <h3>AI & Generative AI</h3>
+
+                    <p>
+                        Learn Python, TensorFlow & OpenAI tools.
+                        Build AI Applications.
+                    </p>
+
+                    <div class="course-bottom">
+                        <strong>Intermediate</strong>
+                        <a href="register.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="Reference/uiux.png" alt="UI/UX">
+
+                <div class="course-info">
+                    <span>5 Months</span>
+                    <h3>UI/UX Design</h3>
+
+                    <p>
+                        Learn Figma, Adobe XD & design principles.
+                    </p>
+
+                    <div class="course-bottom">
+                        <strong>Intermediate</strong>
+                        <a href="register.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="course-card">
+                <img src="Reference/cloud.png" alt="Cloud">
+
+                <div class="course-info">
+                    <span>4 Months</span>
+                    <h3>Cloud & DevOps</h3>
+
+                    <p>
+                     Learn AWS, Docker, <br>
+                     Git & CI/CD.
+                    </p>
+
+                    <div class="course-bottom">
+                        <strong>Intermediate</strong>
+                        <a href="register.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="course-card">
+                <img src="Reference/cyber.png" alt="cyber">
+
+                <div class="course-info">
+                    <span>3 Months</span>
+                    <h3>Cyber Security</h3>
+
+                    <p>
+                        Learn Linux, Networking, Wireshark & Cybersecurity tools.
+
+                    </p>
+
+                    <div class="course-bottom">
+                        <strong>Beginner</strong>
+                        <a href="register.html">View Course →</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

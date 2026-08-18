@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .form{
+           
+
+
+        }
+        .div{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            align-content:center;
+            padding:10px;
+            margin:10px;
+            background-color: aquamarine;
+            flex-direction: column;
+
+        }
+
+        h1 {
+            color: blue;
+        }
+        .btn{
+            margin:15px;
+            bottom:10px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1>Calculator</h1>
+    <form class="form">
+        <div class="div">
+        <label>Product Name</label>
+        <input type="text" id="l1"><br>
+        <label>Product price</label>
+        <input type="number" id="l2"><br>
+        <label>Total quantity</label>
+        <input type="number" id="l3"><br>
+        <input  class="btn" type="submit" onclick="watch()">
+        </div>
+
+    </form>
+    <script>
+        function watch() {
+            let a = document.getElementById("l1").value;
+            let b = document.getElementById("l2").value;
+            let c = document.getElementById("l3").value;
+            let total = b * c;
+            document.write("product name:" + a + "</br>");
+            document.write("product price:" + b + "</br>");
+            document.write("quantity:" + c + "</br>");
+            document.write("total amount:" + total);
+
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,473 @@
+<html>
+
+<head>
+    <title>Aboutpage</title>
+    <style>
+        /* ABOUT */
+        .about-page {
+            background-image: url("Reference/background.png");
+
+            min-height: 1500px;
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Remove individual backgrounds */
+        .home-about,
+        .why-nexora,
+        .how-section {
+            background: transparent;
+
+        }
+
+        .home-about {
+            padding: 90px 7%;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #222;
+        }
+
+        .about-content {
+            width: 55%;
+        }
+
+        .about-content>p:first-child {
+            color: #5b4bdb;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .about-content h2 {
+            font-size: 42px;
+            margin: 15px 0 20px;
+            color:whitesmoke;
+        }
+
+        .about-content p {
+            color:rgba(245, 245, 245, 0.6);
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        .about-box {
+            width: 300px;
+            padding: 45px 30px;
+
+            text-align: center;
+
+            border-radius: 25px;
+            /* background-image: url("Reference/learn.webp"); */
+            background-color: #2A1260;
+
+            color: whitesmoke;
+
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+        .about-content a{
+            color:rgb(36, 165, 230);
+        }
+        .about-content a:hover{
+            color:whitesmoke;
+        }
+
+        .about-icon {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+       
+
+
+        /* WHY NEXORA */
+
+        .why-nexora {
+            padding: 90px 7%;
+
+
+            background-repeat: no-repeat;
+
+
+            color: #222;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title p {
+            color:whitesmoke;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .section-title h2 {
+            font-size: 38px;
+            margin: 12px 0;
+            color:whitesmoke;
+        }
+
+        .section-title span {
+            color: rgba(245, 245, 245, 0.692);
+        }
+
+        .features {
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 25px;
+        }
+
+        .feature-card {
+            padding: 30px;
+
+            text-align: center;
+
+            background: #2A1260;;
+
+            border-radius: 18px;
+
+            transition: 0.3s;
+            box-shadow: 0 10px 30px rgba(245, 245, 245, 0.716);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+
+            box-shadow: 0 12px 30px rgba(91, 75, 219, 0.15);
+        }
+
+        .feature-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .feature-card p {
+            color:rgba(245, 245, 245, 0.722);
+            line-height: 1.6;
+        }
+        .feature-card h3{
+            color:whitesmoke;
+        }
+
+
+        /* HOW IT WORKS */
+
+        .how-section {
+            padding: 90px 7%;
+
+
+
+            color: #222;
+        }
+
+        .steps {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 40px;
+
+            text-align: center;
+        }
+        .step h3{
+            color:whitesmoke;
+        }
+
+        .step-number {
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 20px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+
+            background: #5b4bdb;
+
+            color: white;
+
+            font-weight: bold;
+        }
+
+        .step p {
+            color:rgba(245, 245, 245, 0.832);
+
+            line-height: 1.6;
+
+            margin-top: 10px;
+        }
+
+
+        /* STATS */
+
+        .stats-section {
+            padding: 60px 7%;
+
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+
+            gap: 20px;
+
+            background: #5b4bdb;
+
+            color: white;
+
+            text-align: center;
+        }
+
+        .stat h2 {
+            font-size: 40px;
+        }
+
+        .stat p {
+            margin-top: 8px;
+        }
+
+
+        /* CTA */
+
+        .home-cta {
+            padding: 90px 20px;
+
+            text-align: center;
+
+            background: #11102e;
+
+            color: white;
+        }
+
+        .home-cta>p:first-child {
+            color: #a78bfa;
+
+            font-weight: bold;
+
+            letter-spacing: 2px;
+        }
+
+        .home-cta h2 {
+            font-size: 40px;
+
+            margin: 15px 0;
+        }
+
+        .home-cta p {
+            color: #cbd5e1;
+
+            margin-bottom: 30px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+
+            padding: 14px 28px;
+
+            background: #7c5cff;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="about-page">
+        <section class="home-about">
+
+            <div class="about-content">
+
+                <p>ABOUT NEXORA</p>
+
+                <h2>
+                    Learning That Moves
+                    You Forward
+                </h2>
+
+                <p>
+                    Nexora Academy is a modern learning platform
+                    designed to help students and aspiring
+                    professionals develop practical digital skills.
+                </p>
+
+                <p>
+                    From programming and artificial intelligence
+                    to data analytics and design, our courses
+                    focus on practical knowledge that you can
+                    apply to real-world projects.
+                </p>
+
+                <a href="about.html" class="primary-btn">
+                    Discover Nexora
+                </a>
+
+            </div>
+
+            <div class="about-box">
+
+                <div class="about-icon">🚀</div>
+
+                <h3>Learn. Build. Grow.</h3>
+
+                <p>
+                    Turn your curiosity into skills
+                    and your skills into opportunities.
+                </p>
+
+            </div>
+
+        </section>
+        <section class="why-nexora">
+
+            <div class="section-title">
+
+                <p>WHY NEXORA?</p>
+
+                <h2>
+                    More Than Just Online Courses
+                </h2>
+
+                <span>
+                    Everything you need to turn learning
+                    into real-world skills.
+                </span>
+
+            </div>
+
+
+            <div class="features">
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🎓</div>
+
+                    <h3>Expert Guidance</h3>
+
+                    <p>
+                        Learn concepts with guidance from
+                        experienced instructors.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">💻</div>
+
+                    <h3>Practical Projects</h3>
+
+                    <p>
+                        Practice what you learn by building
+                        real-world projects.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🤖</div>
+
+                    <h3>Future Skills</h3>
+
+                    <p>
+                        Develop modern technology skills
+                        for the evolving digital world.
+                    </p>
+
+                </div>
+
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">🏆</div>
+
+                    <h3>Certification</h3>
+
+                    <p>
+                        Showcase your learning with
+                        course completion certificates.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+        <section class="how-section">
+
+            <div class="section-title">
+
+                <p>HOW IT WORKS</p>
+
+                <h2>
+                    Start Learning in 3 Simple Steps
+                </h2>
+
+            </div>
+
+
+            <div class="steps">
+
+                <div class="step">
+
+                    <div class="step-number">01</div>
+
+                    <h3>Choose Your Course</h3>
+
+                    <p>
+                        Explore our courses and select
+                        the skill you want to learn.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">02</div>
+
+                    <h3>Register & Learn</h3>
+
+                    <p>
+                        Complete your registration and
+                        start learning at your own pace.
+                    </p>
+
+                </div>
+
+
+                <div class="step">
+
+                    <div class="step-number">03</div>
+
+                    <h3>Build & Grow</h3>
+
+                    <p>
+                        Complete projects, earn your
+                        certificate and grow your skills.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>
