@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student</title>
+</head>
+<style>
+    #p1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+
+    }
+
+    #t1 {
+        display: none;
+        background-color: pink;
+        color: black;
+        width: 350px;
+        margin: 30px auto;
+        border: 4px solid black;
+        border-radius: 15px;
+        box-shadow: 0px 5px 15px gray;
+    }
+
+    #head {
+        text-align: center;
+        font-size: 25px;
+    }
+</style>
+
+<body>
+    <h1>student ID</h1>
+    <label>Name</label>
+    <input type="text" id="ip1">
+    <label>course</label>
+    <input type="text" id="ip2">
+    <label>mobile</label>
+    <input type="text" id="ip3">
+    <button type="submit" onclick="stu()">Display</button>
+    <div id="p1">
+        <table id="t1" cellspacing="10px" cellpadding="10px">
+            <tr>
+                <th id="head" colspan="2"></th>
+            </tr>
+            <tr>
+                <th id="th1"></th>
+                <td id="td1"></td>
+            </tr>
+            <tr>
+                <th id="th2"></th>
+                <td id="td2"></td>
+            </tr>
+            <tr>
+                <th id="th3"></th>
+                <td id="td3"></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+
+    <script>
+        function stu() {
+            let Name = document.getElementById("ip1").value;
+            let course = document.getElementById("ip2").value;
+            let mobile = Number(document.getElementById("ip3").value);
+            if (Name != null && course != null && mobile != null) {
+                document.getElementById("t1").style.display = "table";
+                document.getElementById("t1").style.backgroundColor = "yellowgreen";
+                document.getElementById("t1").style.color = "black";
+                document.getElementById("head").innerText = "STUDENT ID CARD";
+
+
+                document.getElementById("th1").innerText = " STUDENT NAME:";
+                document.getElementById("th2").innerText = " COURSE NAME";
+                document.getElementById("th3").innerText = "MOBILE NUMBER";
+                document.getElementById("td1").innerText = Name;
+                document.getElementById("td2").innerText = course;
+                document.getElementById("td3").innerText = mobile;
+            }
+            else {
+                document.getElementById("t1").innerHTML = "wrong inputs";
+
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

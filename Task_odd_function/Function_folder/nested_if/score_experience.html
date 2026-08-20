@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>score experience</title>
+</head>
+
+<body>
+    <h2>Salary Calculator</h2>
+<input type="number" id="s1" placeholder="enter score"><br>
+<input type="number" id="s2" placeholder="enter experience"><br>
+<p id="p1"></p>
+<button type="button" onclick="scores()">click</button>
+
+<script>
+    function scores() {
+        let score = Number(document.getElementById("s1").value);
+        let exp = Number(document.getElementById("s2").value);
+
+        if (score >= 85) {
+            if (exp > 0 && exp <= 2) {
+                document.getElementById("p1").innerText = "salary = 5000";
+            } else if (exp >= 3 && exp < 5) {
+                document.getElementById("p1").innerText = "salary = 10000";
+            } else if (exp >= 5) {
+                document.getElementById("p1").innerText = "salary = 20000";
+            } else {
+                document.getElementById("p1").innerText = "training period";
+            }
+        } else {
+            document.getElementById("p1").innerText = "salary = 7k";
+        }
+    }
+</script>
+</body>
+
+</html>

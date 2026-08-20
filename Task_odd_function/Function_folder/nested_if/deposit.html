@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Deposit Calculator</title>
+</head>
+
+<body>
+
+    <h1 id="value"></h1>
+
+    <label>Amount</label>
+    <input type="number" id="may">
+
+    <button onclick="calculate()">Calculate</button>
+
+    <script>
+        function calculate() {
+
+            let deposit = Number(document.getElementById("may").value);
+            let interest;
+            let maturity;
+
+            if (deposit >= 100000) {
+                interest = deposit * 8 / 100;
+            }
+            else if (deposit >= 50000) {
+                interest = deposit * 6 / 100;
+            }
+            else {
+                interest = deposit * 4 / 100;
+            }
+
+            maturity = deposit + interest;
+
+            document.getElementById("value").innerText =
+                "Maturity Amount = ₹" + maturity;
+        }
+    </script>
+
+</body>
+</html>

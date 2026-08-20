@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>license</title>
+
+</head>
+<body>
+    <h1>license</h1>
+    <label>Age</label><input type="number" id="ip1">
+    <label>license</label><input type="text" id="ip2">
+    <p id="p1"></p>
+    <button type="submit" onclick="red()" >click</button>
+
+    <script>
+        function red(){
+            let age=Number(document.getElementById("ip1").value);
+            let licence=document.getElementById("ip2").value;
+            if(age>=18 && licence=="yes"){
+                document.getElementById("ip1").innerText="eligible";
+            }
+            else{
+                document.getElementById("ip2").innerText="not eligible";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>

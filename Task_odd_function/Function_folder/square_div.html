@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>square div</title>
+    <style>
+    #color{
+    background-color: aqua;
+    height: 100px;
+    width:100px;
+
+    }
+    </style>
+</head>
+<body>
+    <div id="color">
+
+
+    </div>
+    <button type="submit" onclick="one()" ondblclick="two()">Submit</button>
+    <script>
+        function one(){
+            document.getElementById("color").style.height="200px";
+             document.getElementById("color").style.width="200px";
+              document.getElementById("color").style.backgroundColor="blue";
+               document.getElementById("color").style.transition="2s";
+        }
+         function two(){
+            document.getElementById("color").style.height="50px";
+             document.getElementById("color").style.width="50px";
+              document.getElementById("color").style.backgroundColor="red";
+               document.getElementById("color").style.transition="2s";
+        }
+    </script>
+</body>
+</html>

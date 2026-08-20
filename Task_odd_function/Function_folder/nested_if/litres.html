@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Water Bill</title>
+</head>
+
+<body>
+
+    <h1 id="g1"></h1>
+
+    <label>Litres</label>
+    <input type="number" id="ip1">
+
+    <input type="submit" value="Calculate" onclick="click1()">
+
+    <script>
+        function click1() {
+
+            let lit = Number(document.getElementById("ip1").value);
+            let bill;
+
+            if (lit <= 500) {
+                bill = lit * 1;
+            }
+            else {
+                bill = lit * 8;
+            }
+
+            document.getElementById("g1").innerText =
+                "Bill Amount = ₹" + bill;
+        }
+    </script>
+
+</body>
+</html>

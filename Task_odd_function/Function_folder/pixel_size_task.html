@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pixel value</title>
+</head>
+<body>
+    <p id="cool">Hello Dude!</p>
+    <button type="submit" onclick="inc()">A++</button>
+    <button type="submit" onclick="dec()">A--</button>
+    <button type="reset" onclick="size()">Reset</button>
+
+    <script>
+        function inc(){
+
+            document.getElementById("cool").style.fontSize="40px";
+        }
+           function dec(){
+            document.getElementById("cool").style.fontSize="10px";
+        }
+           function size(){
+            document.getElementById("cool").style.fontSize="20px";
+        }
+    </script>
+</body>
+</html>

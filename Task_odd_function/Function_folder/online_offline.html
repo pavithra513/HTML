@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online</title>
+</head>
+
+<body id="b1">
+    <h1 id="on">please gooo</h1>
+    <button type="submit" onclick="agent()">Online</button>
+    <button type="submit" onclick="detergent()">offline</button>
+
+    <script>
+        function agent() {
+            document.getElementById("on").innerText = "online";
+            document.getElementById("on").style.color = "green";
+            document.getElementById("on").style.transition = "3s";
+            document.getElementById("b1").style.backgroundColor = "lightgreen";
+        }
+        function detergent() {
+            document.getElementById("on").innerText = "offline";
+            document.getElementById("on").style.color = "red";
+            document.getElementById("on").style.transition = "3s";
+            document.getElementById("b1").style.backgroundColor = "orange";
+        }
+    </script>
+
+</body>
+
+</html>

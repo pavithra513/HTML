@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>interview</title>
+    <style>
+        #s2 {
+            visibility: hidden;
+        }
+
+        #s3 {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>interview process</h1>
+    <label> aptiscore</label>
+    <input type="number" id="s1">
+    <label> gdscore</label>
+    <input type="number" id="s2">
+    <label> techscore</label>
+    <input type="number" id="s3">
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <button type="submit" onclick="apti()">Next</button>
+
+    <script>
+        function apti() {
+            let apti = Number(document.getElementById("s1").value);
+            if (apti >= 50) {
+                document.getElementById("s2").style.visibility = "visible";
+                document.getElementById("p1").innerText = "eligible for GD round";
+
+                let GD = Number(document.getElementById("s2").value);
+                if (GD >= 65) {
+                    document.getElementById("s3").style.visibility = "visible";
+                    document.getElementById("p1").innerText = "eligible for tech round";
+
+
+                    let tech = Number(document.getElementById("s3").value);
+                    if (tech >= 75) {
+
+                        document.getElementById("p1").innerText = "eligible for HR round";
+
+                    } else  {
+                        document.getElementById("p2").innerText = "sorry not eligible for HR round";
+                    }
+                } else {
+                    document.getElementById("p2").innerText = "sorry not eligible for tech round";
+                }
+            } else {
+                document.getElementById("p2").innerText = "sorry not eligible for GD round";
+            }
+
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

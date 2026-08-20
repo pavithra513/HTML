@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pass fail</title>
+</head>
+<body>
+    <h1>Mark calculation</h1>
+    <label>Marks</label>
+    <input type="number" id="score">
+    <p id="show"></p>
+    <button type="submit" onclick="school()">Evaluate</button>
+    
+    <script>
+        function school(){
+            let mark=document.getElementById("score").value;
+            if(mark>35){
+                document.getElementById("show").innerText="mark is:"+mark +"pass";
+            }
+            else{
+                document.getElementById("show").innerText="mark is:"+mark +"fail";
+            }
+        }
+    </script>
+    
+</body>
+</html>

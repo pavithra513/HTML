@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+</head>
+<body id="bx">
+    <h2 id="change">Button change</h2>
+    <button type="submit" onclick="react()" ondblclick="react1()">Dark Mode</button>
+    <script>
+        function react(){
+            document.getElementById("bx").style.backgroundColor="black";
+             document.getElementById("bx").style.color="white";
+           
+            
+        }
+        
+        function react1(){
+            document.getElementById("bx").style.backgroundColor="white";
+             document.getElementById("bx").style.color="black";
+           
+            
+        }
+    </script>
+    
+</body>
+</html>

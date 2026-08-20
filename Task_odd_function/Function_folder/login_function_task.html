@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login task</title>
+</head>
+<body>
+    <h1>Login</h1>
+    <label>UserName</label>
+    <input type="text" id="text">
+    <label>password</label>
+    <input type="password" id="pass">
+    <p id="result"></p>
+    <button type="submit" onclick="login()">CHECK</button>
+    <script>
+        function login(){
+            let user=document.getElementById("text").value;
+            let password=document.getElementById("pass").value;
+            if(user=="admin" && password=="123"){
+                document.getElementById("result").innerText="login success! thanks!";
+            }
+            else{
+                document.getElementById("result").innerText="login failed! thanks!";
+            }
+        }
+    </script>
+    
+</body>
+</html>
