@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bank approval</title>
+    <link rel="stylesheet" href="bank_loan_approval1.css">
+</head>
+<body>
+    <div class="box">
+        <h1>Bank Approval</h1>
+    <label>Salary</label>
+    <input type="number" id="ip1">
+    <label>Age</label>
+     <input type="number" id="ip2">
+     <h1 id="h1"></h1>
+    <button type="submit" onclick="bank()">calculate</button>
+    </div>
+
+    <script>
+        function bank() {
+            let salary = Number(document.getElementById("ip1").value);
+            let Age = Number(document.getElementById("ip2").value);
+            if (salary >= 25000) {
+
+                if (Age >= 21) {
+                    document.getElementById("h1").innerText = "congrats your loan Approved";
+                }
+            
+            else {
+                document.getElementById("h1").innerText = "Age not Eligible";
+            }
+        }
+        
+            else {
+                document.getElementById("h1").innerText = "salary not eligible";
+
+            }
+        }
+    </script>
+    
+</body>
+</html>

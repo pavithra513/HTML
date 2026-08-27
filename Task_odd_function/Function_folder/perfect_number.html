@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perfect number</title>
+</head>
+
+<body>
+    <script>
+        for (let z = 1; z <= 20000; z++) {
+            let sum = 0;
+            let n = z;
+            for (let i = 1; i < n; i++) {
+                if (n % i == 0) {
+                    sum = sum + i;
+                }
+            }
+
+            if (n == sum) {
+                document.write(n + " is a perfect number <br></br>");
+            }
+            //  else{
+            //     document.write(n+" is  not a perfect number");
+            //  }
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping</title>
+    <link rel="stylesheet" href="online_shopping.css">
+</head>
+<body>
+   <div class="box">
+    <h1>Shopping</h1>
+    <label>Amount</label>
+    <input type="number" id="amt">
+    <label>Premium (yes/no)</label>
+    <input type="text" id="prem">
+    <h1 id="res"></h1>
+    <button onclick="checkOffer()">Check Offer</button>
+    </div>
+
+    <script>
+        function checkOffer(){
+            let amt = Number(document.getElementById("amt").value);
+            let prem = document.getElementById("prem").value;
+            let discount = 0;
+
+            if(amt >= 2000){
+                if(prem === "yes") discount = 20;
+                else discount = 10;
+            }
+            else discount = 0;
+
+            let final = amt - (amt * discount / 100);
+            document.getElementById("res").innerText = discount + "% off, Final: ₹" + final;
+        }
+    </script>
+</body>
+    
+
+</html>

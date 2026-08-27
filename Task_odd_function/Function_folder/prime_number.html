@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prime number</title>
+</head>
+
+<body>
+
+
+<h2 id="result"></h2>
+<h3 id="count"></h3>
+
+<script>
+    let result = "";
+    let count = 0;
+
+    for (let i = 2; i <= 100; i++) {
+        let prime = true;
+
+        for (let j = 2; j < i; j++) {
+            if (i % j == 0) {
+                prime = false;
+                break;
+            }
+        }
+
+        if (prime) {
+            result = result + i + " ";
+            count++;
+        }
+    }
+
+    document.getElementById("result").innerHTML = "Prime Numbers: " + result;
+    document.getElementById("count").innerHTML = "Count: " + count;
+
+    </script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

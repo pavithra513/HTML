@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niven</title>
+</head>
+
+<body>
+
+    <script>
+        // let num = 153;
+        // let temp = num;
+        // let rev = 0;
+
+        // while (num > 0) {
+        //     let rem = num % 10;
+        //     rev = (rev * 10) + rem;
+        //     num = parseInt(num / 10);
+        // }
+
+        // document.write("rev=" + rev+"<br></br>");
+        // if (rev == temp) {
+        //     document.write(temp + " is a palindrome" + "<br/>");
+        // }
+        // else {
+        //     document.write(temp + " is a not a palindrome" + "<br/>");
+
+        // }
+
+
+        // let niven=16;
+        // let n=niven;
+        // let sum=0;
+        // while(niven>0){
+        //     let rem=niven%10;
+        //     sum+=rem;
+        //     niven=parseInt(niven/10);
+        // }
+
+        //     let res= n%sum;
+        //     if(res==0){
+        //         document.write(res+"Niven number"+"<br>");
+        //     }
+        //     else{
+        //           document.write(res+"Niven not a  number"+"<br>");
+
+        //     }
+
+        document.write("<h1>found program<h1>");
+        let value = 14445;
+        let found = 4;
+        let count = 0;
+        while (value > 0) {
+
+            let rem = value % 10;
+            if (rem == found) {
+                count++;
+            }
+
+            value = parseInt(value / 10);
+        }
+        document.write("count of number:"+count+ "<br>");
+
+
+        if (count > 0) {
+            document.write(found + "found number" + "<br/>");
+        }
+        else {
+            document.write(found + "not found" + "<br/>");
+
+        }
+
+
+
+
+        
+
+
+
+    </script>
+
+
+</body>
+
+</html>

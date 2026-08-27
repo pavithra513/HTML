@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Interest</title>
+    <link rel="stylesheet" href="simple_interest_calculator.css">
+</head>
+
+<body>
+    <div class="boxinterest">
+        <h1>SI calculation</h1>
+    <label>Principal</label>
+    <input type="number" id="ip1">
+    <label>Rate</label>
+    <input type="number" id="ip2">
+    <label>Time</label>
+    <input type="number" id="ip3">
+    <h1 id="h1"></h1>
+    <button type="submit" onclick="interest()">Calculate</button>
+    </div>
+
+    <script>
+        function interest() {
+            let principal = Number(document.getElementById("ip1").value);
+            let rate = Number(document.getElementById("ip2").value);
+            let time = Number(document.getElementById("ip3").value);
+            let interest = principal * rate * time / 100;
+
+            document.getElementById("h1").innerText="interest is:"+interest;
+        }
+    </script>
+
+
+</body>
+
+</html>

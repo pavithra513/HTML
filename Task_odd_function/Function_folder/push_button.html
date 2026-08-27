@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push button</title>
+</head>
+<body>
+    <input type="text" id="ip1" placeholder="enter value">
+    <button type="submit" onclick="Add()">ADD</button>
+    <button type="submit" onclick="remove()">Remove</button>
+
+    <p id="p1"></p>
+
+    <script>
+       
+        let arr=[];
+        function Add(){
+             let name=document.getElementById("ip1").value;
+           
+            arr.push(name);
+              document.getElementById("p1").innerText=arr;
+           
+        }
+        function remove(){
+             let name=document.getElementById("ip1").value;
+             let fint=arr.indexOf(name);
+             if(fint!=-1){
+                arr.splice(fint,1);
+             }
+             
+             document.getElementById("p1").innerText=arr;
+
+             }
+            
+
+        
+
+
+        // let a=[11,5,7,9,21,11,23]
+        // a.unshift(40);
+        // document.write(a+"<br>");
+        // document.write(a.indexOf(21));
+        // document.write(a.lastIndexOf(11)+"<br>");
+        // a.splice(1,2);
+        // document.write(a+"<br>");
+        // document.write(a.pop()+"<br>");
+        // a.splice(4,2,121);
+        // document.write(a);
+
+
+    </script>
+    
+</body>
+</html>

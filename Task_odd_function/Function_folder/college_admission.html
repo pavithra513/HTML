@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>college admission</title>
+    <link rel="stylesheet" href="college_admission.css">
+</head>
+
+<body>
+    <div class="box">
+    <label>Percentage</label>
+    <input type="number" id="ip1">
+    <label>Age</label>
+    <input type="number" id="ip2">
+    <h1 id="h1"></h1>
+    <button type="submit" onclick="college()">Evaluate</button>
+    </div>
+
+    <script>
+        function college() {
+            let percentage = Number(document.getElementById("ip1").value);
+            let Age = Number(document.getElementById("ip2").value);
+            if (percentage >= 60) {
+
+                if (Age >= 18) {
+                    document.getElementById("h1").innerText = "congrats your Admission Approved";
+                }
+            
+            else {
+                document.getElementById("h1").innerText = "Age not Eligible";
+            }
+        }
+        
+            else {
+                document.getElementById("h1").innerText = "Marks not eligible";
+
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

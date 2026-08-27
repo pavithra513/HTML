@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array practice</title>
+</head>
+
+<body>
+    <script>
+        // let a=[2,7,9,5,8,6,9,4]
+        // for(let i=0;i<a.length;i++){
+        //     document.write(a[i]+"<br>");
+        // }
+
+
+        // let a=[2,7,9,5,8,6,3,4]
+        // for(let j=0;j<a.length;j++){
+        //     num=a[j];
+        //     if(num % 2==0){
+        //         document.write(a[j]+"even number <br>");
+        //     }
+        // }
+
+
+
+        // let a=[2,7,13,5,8,89,5,4]
+        // for(let j=0;j<a.length;j++){
+        //     let num=a[j];
+        //     let pcount=0;
+        //     for(let i=2;i<num;i++){
+        //         if(num%i==0){
+        //             pcount++;
+        //         }
+        //     }
+        //     if(pcount==0){
+        //         document.write(a[j]+"prime numbers <br>");
+        //     }
+        // }
+
+        arr = [5, 8, 9, 6, 4]
+        for (let x = 0; x < arr.length; x++) {
+            let fact = 1;
+            let n = arr[x];
+            for (let i = 1; i <= n; i++) {
+                fact = fact * i;
+            }
+            document.write("factorial of "+n+" = " + fact+"<br></br>");
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

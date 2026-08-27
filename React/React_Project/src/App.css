@@ -1,0 +1,49 @@
+
+nav{
+  background-color: aquamarine;
+  color:black;
+  display:flex;
+  justify-content:space-around;
+  
+}
+h1{
+  color:blue;
+  
+  justify-content: center;
+  align-content: center;
+ 
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+p{
+  color:brown;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#con{
+  color:blueviolet;
+  text-align: center;
+ 
+  
+}
+#abo{
+  color:brown;
+  text-align: center;
+}
+#nav1{
+  text-align: center;
+}
+*{
+  background-color:antiquewhite;
+}
+#pc{
+  margin-top:200px;
+}
+#ac{
+  margin-top:200px;
+}
+#hc{
+   margin-top:200px;
+}

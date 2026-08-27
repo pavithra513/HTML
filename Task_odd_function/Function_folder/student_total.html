@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>student total</title>
+    <link rel="stylesheet" href="student_total.css">
+  
+</head>
+
+<body>
+    
+    <div class="box">
+        <h1>Student total</h1>
+    <label>Tamil</label>
+    <input type="number" id="ip1"><br>
+    <label>English</label>
+    <input type="number" id="ip2"><br>
+    <label>Maths</label>
+    <input type="number" id="ip3"><br>
+    <label>Science</label>
+    <input type="number" id="ip4"><br>
+    <label>Social</label>
+    <input type="number" id="ip5"><br>
+    <h1 id="h1"></h1><br>
+    <h2 id="h2"></h2><br>
+    <button type="submit" onclick="stu()"> calculate</button>
+    </div>
+
+    <script>
+        function stu(){
+        let Tamil = Number(document.getElementById("ip1").value);
+        let English = Number(document.getElementById("ip2").value);
+        let Maths = Number(document.getElementById("ip3").value);
+        let Science = Number(document.getElementById("ip4").value);
+        let Social = Number(document.getElementById("ip5").value);
+
+        let mark = Tamil + English + Maths + Science + Social;
+        let average = mark / 5;
+
+        document.getElementById("h2").innerText = "total:" + mark;
+        document.getElementById("h1").innerText = "average:" + average;
+
+        }
+
+
+
+
+    </script>
+
+</body>
+
+</html>

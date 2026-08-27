@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Number</title>
+</head>
+
+<body>
+     <h2>Palindrome Numbers</h2>
+    <p id="result"></p>
+    <p id="count"></p>
+    <script>
+        // for(let x=111;x<=130;x++){
+        // let num = 153;
+        // let temp = num;
+        // let rev = 0;
+        // while (num > 0) {
+        //     let rem = num % 10;
+        //     rev = (rev * 10) + rem;
+        //     num = parseInt(num / 10);
+        // }
+
+        // document.write("rev=" + rev+"<br></br>");
+        // if (rev == temp) {
+        //     document.write(temp + " is a palindrome" + "<br/>");
+        // }
+        // else {
+        //     document.write(temp + " is a not a palindrome" + "<br/>");
+
+        // }
+
+
+
+        // let Tnum = 17;
+
+        // let rev = 0;
+        // let temp = Tnum;
+
+        // while (Tnum > 0) {
+        //     let Trem = Tnum % 10;
+        //     rev = (rev * 10) + Trem;
+        //     Tnum = parseInt(Tnum / 10);
+        // }
+
+        // document.write("rev=" + rev + "<br></br>");
+        // let count = 0;
+        // for (let i = 2; i < rev; i++) {
+        //     if ( rev % i == 0) {
+        //         count++;
+        //     }
+        // }
+        // if (count == 0) {
+        //     document.write(rev + " is a twisted prime" + "<br/>");
+        // }
+        // else {
+        //     document.write(rev + " is a not a twisted prime number" + "<br/>");
+
+        // }
+
+
+    
+
+
+    
+
+
+
+   
+
+    
+        let result = "";
+        let count = 0;
+
+        for (let i = 111; i <= 130; i++) {
+            let num = i;
+            let rev = 0;
+
+            while (num > 0) {
+                let digit = num % 10;
+                rev = rev * 10 + digit;
+                num = Math.floor(num / 10);
+            }
+
+            if (i == rev) {
+                result = result + i + " ";
+                count++;
+            }
+        }
+
+        document.getElementById("result").innerHTML = result;
+        document.getElementById("count").innerHTML = "Count: " + count;
+
+
+
+
+    </script>
+
+</body>
+
+</html>
