@@ -1,21 +1,60 @@
 import { useState, useEffect } from "react";
-import "./App.css";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+//import "./App.css";
+import React from "react";
 
-function App() {
 
-  let [products, setProducts] = useState([]);
+import Student from './Student'
+import Details from './Details'
+ import NewFruit from './Newfruit';
+import Navigation from "./Navigation";
+import Home from './Home'
+import About from './About'
 
-  useEffect(() => {
+let App = () => {
+  let infor={
+    name:"arun",
+    age:"21",
+    course:"React",
+  };
 
-    fetch("https://fakestoreapi.com/products")
-      .then((res) => res.json())
-      .then((data) => setProducts(data));
+  // let [products, setProducts] = useState([]);
 
-  }, []);
+  // useEffect(() => {
+
+  //   fetch("https://fakestoreapi.com/products")
+  //     .then((res) => res.json())
+  //     .then((data) => setProducts(data));
+
+  // }, []);
 
   return (
-    <div>
+    <>
+      <div>
+        {/* <Task1/>
+      <Task2/>
+      <Fruit/>
+       <Navbar /> */}
+       <BrowserRouter>
+       <Navigation/>
+       
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+            <Route path="/About" element={<About/>}/>
+              <Route path="/Student" element={<Student detail={infor}/>}/>
+            ``
+        </Routes>
+      
+       </BrowserRouter>
+       <Details/>
+       <Student detail={infor}/>
+       <NewFruit/>
+       <Home/>
+       <About/>
 
+        
+
+        {/*
       <h1>My Store 🛍️</h1>
 
       <ul>
@@ -41,9 +80,10 @@ function App() {
 
         ))}
 
-      </ul>
+      </ul>  */}
 
-    </div>
+      </div>
+    </>
   );
 }
 

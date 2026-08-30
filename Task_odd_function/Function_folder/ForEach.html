@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ForEach</title>
+</head>
+<body>
+    <script>
+        //   document.write("<h1>Even number using For Each</h1>");
+
+        //   let arr=[80,67,45,22,86,24]
+        //   arr.forEach((i)=>{
+        //     if(i%2==0){
+        //         document.write(i+ "even number <br>");
+        //     }
+        //   })
+
+        //   document.write("<h1>Prime number using For Each</h1>");
+        //   let arr1=[13,17,90,19,29]
+        //   arr1.forEach((i)=>{
+        //      let count=0
+        //     let value=i;
+        //     for(let i=2;i<value;i++){
+        //         if(value%i==0){
+        //             count++;
+        //         }
+        //     }
+        //     if(count>0){
+        //             document.write(value+" not prime  number <br></br>");
+        //     }
+        //     else{
+        //           document.write(value+"prime number <br></br>");
+        //     }
+          
+        //   })
+
+
+        // document.write("<h1>even & odd number using filter</h1>"); 
+        // let arr=[23,78,90,56,34]
+        // let num=arr.filter((i)=>(i%2==0));
+        // document.write("even number :"+num+ "<br></br>")
+
+        // let num1=arr.filter((i)=>(i%2!=0));
+        // document.write("odd number :"+num1+ "<br></br>")
+
+
+        // document.write("<h1>Find a greater number using filter</h1>"); 
+        // let arr1=[90,67,45,78,99,34]
+        // let score=arr1.filter((i)=>(i>80));
+        //   document.write("above 80 :"+score+ "<br></br>")
+
+
+        //   document.write("<h1>Find a particular number using filter</h1>"); 
+        //     let arr1=[90,67,45,78,99,34,12]
+        // let score=arr1.filter((i)=>(i>=30)&&(i<=60));
+        //   document.write("between 30 & 60 :"+score+ "<br></br>")
+
+        //    document.write("<h1>Find a score  using filter</h1>"); 
+        //    let arr1=[90,67,45,78,99,34,12]
+        //   let mark=arr1.filter((i)=>(i<=60)).map((i)=>i+10);
+        //   document.write("mark: "+mark+"<br></br>")
+
+
+          
+        //    document.write("<h1>Find a particular number using filter</h1>"); 
+        //    let arr2=[90,67,45,78,99,34,12]
+        //   let marks=arr2.filter((i)=>(i>=30));
+        //   document.write(" total mark: "+marks+"<br></br>")
+
+
+          
+        // document.write("<h1>Find sum and count using reduce filter</h1>"); 
+        // let arr1=[90,67,45,78,99,34]
+        // let score=arr1.filter((i)=>(i>80));
+        // let res=score.reduce((sum,i)=>sum+i,0);
+        // document.write("sum value :"+res+ "<br></br>");
+        // let res1=score.reduce((count,i)=>count+1,0);
+        // document.write("count value :"+res1+ "<br></br>");
+        // let avg=score.reduce((avg,i)=>res/res1);
+        //  document.write("Average value :"+avg+ "<br></br>");
+
+    document.write("<h1>Swapping number</h1>");
+    let arr=[56,89,23,78,90,25] 
+    let result=arr.filter(num=>num>80)
+    let max=arr.reduce((a,b)=>a>b? a:b)
+     let min=arr.reduce((a,b)=>a<b? a:b)
+
+     document.write("max score"+max+"<br></br>");
+      document.write("min score"+min+"<br></br>");
+
+
+    </script>
+    
+</body>
+</html>

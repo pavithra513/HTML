@@ -6,6 +6,8 @@ import Counter from './Counter';
 import Name from './Name';
 import Update from './Update';
 import LoginPage from './LoginPage';
+import Demo from './Demo.jsx'
+
 
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
       <LoginPage/><br/><br/>
       <Update />
       <Counter/>
+      <Demo/>
 
     </>);
 }

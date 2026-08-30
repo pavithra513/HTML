@@ -3,7 +3,7 @@ import {useState} from "react";
 function Counter(){
     const[count,setCount]=useState(0);
     const[word,setWord]=useState("hello");
-    const[letter,setLetter]=useState("")
+    const[letter,setLetter]=useState("");
     let hi=()=>{
         setCount(count+1);
 

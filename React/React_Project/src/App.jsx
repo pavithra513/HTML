@@ -3,14 +3,16 @@ import Home from "./Home";
 import About from "./About";
 import Contact from "./Contact";
 import Navbar from "./Navbar";
-import './App.css';
+//import './App.css';
 import Gallary from "./Gallary"
+import DecCount from './DecCount'
 
 
 const App = () => {
   return (
     <>
-    <div>
+    <DecCount/>
+     {/* <div>
     <BrowserRouter>
       <Navbar />
       <Routes>
@@ -18,10 +20,11 @@ const App = () => {
         <Route path="/About" element={<About />} />
         <Route path="/Contact" element={<Contact />} />
         <Route path="/Gallary" element={<Gallary />} />
+        
 
       </Routes>
     </BrowserRouter>
-    </div>
+    </div>  */}
   </>
   );
 }
