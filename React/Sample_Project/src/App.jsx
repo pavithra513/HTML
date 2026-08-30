@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 //import "./App.css";
 import React from "react";
+import "./index.css";
 
 
 import Student from './Student'
@@ -10,6 +11,7 @@ import Details from './Details'
 import Navigation from "./Navigation";
 import Home from './Home'
 import About from './About'
+import Shop from './Shop'
 
 let App = () => {
   let infor={
@@ -18,15 +20,7 @@ let App = () => {
     course:"React",
   };
 
-  // let [products, setProducts] = useState([]);
-
-  // useEffect(() => {
-
-  //   fetch("https://fakestoreapi.com/products")
-  //     .then((res) => res.json())
-  //     .then((data) => setProducts(data));
-
-  // }, []);
+  
 
   return (
     <>
@@ -51,36 +45,9 @@ let App = () => {
        <NewFruit/>
        <Home/>
        <About/>
+       <Shop/>
 
         
-
-        {/*
-      <h1>My Store 🛍️</h1>
-
-      <ul>
-
-        {products.map((product) => (
-
-          <li key={product.id}>
-
-            <img
-              src={product.image}
-              alt={product.title}
-            />
-
-            <h3>{product.title}</h3>
-
-            <p>₹ {product.price}</p>
-
-            <p>⭐ {product.rating.rate}</p>
-
-            <button>Add to Cart</button>
-
-          </li>
-
-        ))}
-
-      </ul>  */}
 
       </div>
     </>
